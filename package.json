@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "swa:start": "swa start app",
     "swa:login": "swa deploy app",
     "swa:deploy": "swa login"
