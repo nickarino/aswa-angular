@@ -1,3 +1,4 @@
 {
-    "staticWebApps.outputSubpath": "dist/angular-basic"
+  "staticWebApps.outputSubpath": "dist/angular-basic",
+  "editor.tabSize": 2
 }
