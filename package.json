@@ -1,7 +1,7 @@
 {
   "name": "aswa-angular",
   "version": "0.0.0",
-  "engines": { "node": "17.x" },
+  "engines": { "node": "16.14.2" },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
