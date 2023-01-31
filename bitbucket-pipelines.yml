@@ -13,6 +13,8 @@ pipelines:
             - docker
           script:
             - pipe: microsoft/azure-static-web-apps-deploy:main
+              env:
+                CUSTOM_BUILD_COMMAND: 'chown -R root:root . && npm run cd'
               variables:
                 APP_LOCATION: '$BITBUCKET_CLONE_DIR'
                 APP_BUILD_COMMAND: 'npm run build'
