@@ -1,7 +1,11 @@
 *.js.map
 *.ts
+*.spec.ts
 .git*
 .vscode
 local.settings.json
+local.settings.json-template
 test
 tsconfig.json
+jest.config.js
+coverage
