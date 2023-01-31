@@ -1,0 +1,27 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting {
+  font-size: 2rem;
+}
+
+.error {
+  font-weight: bold;
+  color: red;
+}
+
+.loading {
+  font-style: italic;
+  color: darkgray;
+}

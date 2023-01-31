@@ -1,6 +1,7 @@
 import { AzureFunction, Context, HttpRequest, Logger } from '@azure/functions';
 import { describe, beforeEach, it, expect, jest } from '@jest/globals';
 import exp = require('constants');
+import { Kinda } from 'kinda-type';
 import subject from './index';
 
 describe('GetGreeting Azure Function', () => {

@@ -1,1 +1,15 @@
-<div>Hello {{ value }}</div>
+<div class="content">
+  <div class="form">
+    <span>Enter your name: </span>
+    <input type="text" #name (keyup.enter)="greet(name.value)" />
+    <button (click)="greet(name.value)">
+      Greet
+    </button>
+  </div>
+  <hr />
+  <span *ngIf="greeting" class="greeting">{{ greeting }}</span>
+  <span *ngIf="error" class="error">{{ error }}</span>
+  <span *ngIf="!greeting && !error" class="loading"
+    >loading, please wait...</span
+  >
+</div>

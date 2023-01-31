@@ -4,7 +4,7 @@
     "app": {
       "context": "http://localhost:4200",
       "run": "npm start",
-      "apiLocation": "",
+      "apiLocation": "api",
       "outputLocation": "dist/aswa-angular",
       "devserverTimeout": 10000,
       "open": "true"
