@@ -1,4 +1,10 @@
 {
-  "staticWebApps.outputSubpath": "dist/angular-basic",
-  "editor.tabSize": 2
+  "staticWebApps.outputSubpath": "dist/aswa-angular",
+  "editor.tabSize": 2,
+  "azureFunctions.deploySubpath": "api",
+  "azureFunctions.postDeployTask": "npm install (functions)",
+  "azureFunctions.projectLanguage": "TypeScript",
+  "azureFunctions.projectRuntime": "~4",
+  "debug.internalConsoleOptions": "neverOpen",
+  "azureFunctions.preDeployTask": "npm prune (functions)"
 }
