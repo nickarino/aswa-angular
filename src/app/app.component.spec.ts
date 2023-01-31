@@ -1,8 +1,8 @@
-import { AppComponent } from "./app.component";
+import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   let subject: AppComponent;
-  
+
   beforeEach(() => {
     subject = new AppComponent();
   });
@@ -12,6 +12,7 @@ describe('AppComponent', () => {
 
     beforeEach(action);
 
-    it('should set value to "World"', () => expect(subject.value).toBe('World'));
+    it('should set value to "World"', () =>
+      expect(subject.value).toBe('World'));
   });
 });
