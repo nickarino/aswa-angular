@@ -14,7 +14,7 @@ pipelines:
           script:
             - pipe: microsoft/azure-static-web-apps-deploy:main
               variables:
-                CUSTOM_BUILD_COMMAND: 'chown -R root:root . && npm run cd'
+                CUSTOM_BUILD_COMMAND: 'chown -R "$(whoami)" $BITBUCKET_CLONE_DIR && npm run cd'
                 APP_LOCATION: '$BITBUCKET_CLONE_DIR'
                 APP_BUILD_COMMAND: 'npm run build'
                 API_LOCATION: 'api'
