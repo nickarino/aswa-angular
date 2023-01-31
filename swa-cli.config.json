@@ -4,7 +4,9 @@
     "app": {
       "context": "http://localhost:4200",
       "run": "npm start",
+      "appBuildCommand": "npm run build",
       "apiLocation": "api",
+      "apiBuildCommand": "npm run build",
       "outputLocation": "dist/aswa-angular",
       "devserverTimeout": 10000,
       "open": "true"

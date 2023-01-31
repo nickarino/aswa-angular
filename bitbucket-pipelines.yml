@@ -15,6 +15,9 @@ pipelines:
             - pipe: microsoft/azure-static-web-apps-deploy:main
               variables:
                 APP_LOCATION: '$BITBUCKET_CLONE_DIR'
+                APP_BUILD_COMMAND: 'npm run build'
+                API_LOCATION: 'api',
+                API_BUILD_COMMAND: 'npm run build'
                 OUTPUT_LOCATION: '$BITBUCKET_CLONE_DIR/dist/aswa-angular'
                 API_TOKEN: $deployment_token
 
