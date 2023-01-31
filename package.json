@@ -13,7 +13,8 @@
     "swa:start": "swa start app",
     "swa:login": "swa login",
     "swa:deploy": "swa deploy app",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "postinstall": "cd api && npm i"
   },
   "private": true,
   "dependencies": {

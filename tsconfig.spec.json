@@ -3,7 +3,15 @@
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "module": "CommonJs",
-    "types": ["jest"]
+    "types": ["jest", "kinda-type"]
   },
-  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
+  "include": [
+    "src/**/*.spec.ts", 
+    "src/**/*.d.ts",
+    "api/**/*.spec.ts",
+    "api/**/*.d.ts"
+  ],
+  "exclude": [
+    "api/node_modules"
+  ]
 }
