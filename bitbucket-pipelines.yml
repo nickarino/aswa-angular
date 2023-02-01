@@ -15,7 +15,7 @@ pipelines:
             - pipe: microsoft/azure-static-web-apps-deploy:main
               variables:
                 NPM_CONFIG_CACHE: '$BITBUCKET_CLONE_DIR/.npm'
-                CUSTOM_BUILD_COMMAND: 'echo 'Who am I?' && whoami && echo 'Home dir:' && echo ~ && echo 'Current working directory:' && pwd && echo 'npm cache directory:' && npm config get cache && echo '$NPM_CONFIG_CACHE:' && echo $NPM_CONFIG_CACHE && echo 'files/permissions for cwd:' && ls -al . && echo 'files/permissions for source directory:' && ls -al $BITBUCKET_CLONE_DIR && echo 'files/permissions for home directory:' && ls -al ~'
+                CUSTOM_BUILD_COMMAND: 'echo "Who am I?" && whoami && echo "Home dir:" && echo ~ && echo "Current working directory:" && pwd && echo "npm cache directory:" && npm config get cache && echo "NPM_CONFIG_CACHE:" && echo $NPM_CONFIG_CACHE && echo "files/permissions for cwd:" && ls -al . && echo "files/permissions for source directory:" && ls -al $BITBUCKET_CLONE_DIR && echo "files/permissions for home directory:" && ls -al ~'
                 APP_LOCATION: '$BITBUCKET_CLONE_DIR'
                 APP_BUILD_COMMAND: 'npm run build'
                 API_LOCATION: 'api'
