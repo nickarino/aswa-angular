@@ -36,7 +36,7 @@ This repository by contrast provides:
 * support for latest NodeJS version
 
 My hope is that this gets you up and going much quicker than you would following the 
-[official guide](https://learn.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=angular)
+[official guide](https://learn.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=angular).
 
 ## Development
 
