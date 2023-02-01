@@ -14,7 +14,7 @@
     "swa:login": "swa login",
     "swa:deploy": "swa deploy app",
     "lint": "ng lint",
-    "cd": "npm ci --unsafe-perm && npm run build && cd api && npm ci --unsafe-perm && npm run build"
+    "cd": "npm ci && npm run build && cd api && npm ci && npm run build"
   },
   "private": true,
   "dependencies": {
