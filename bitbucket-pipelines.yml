@@ -15,7 +15,7 @@ pipelines:
             - pipe: microsoft/azure-static-web-apps-deploy:main
               variables:
                 NPM_CONFIG_CACHE: '$BITBUCKET_CLONE_DIR/.npm'
-                CUSTOM_BUILD_COMMAND: 'npm run cd'
+                CUSTOM_BUILD_COMMAND: 'bash custom-pipeline-build-command.sh && npm run cd'
                 APP_LOCATION: '$BITBUCKET_CLONE_DIR'
                 APP_BUILD_COMMAND: 'npm run build'
                 API_LOCATION: 'api'
