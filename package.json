@@ -14,6 +14,7 @@
     "swa:login": "swa login",
     "swa:deploy": "swa deploy app",
     "lint": "ng lint",
+    "preinstall": "npm config --global set cache ./.npm && npm config set cache ./.npm",
     "cd": "npm ci && npm run build && cd api && npm ci && npm run build"
   },
   "private": true,
