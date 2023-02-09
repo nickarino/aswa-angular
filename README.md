@@ -40,6 +40,7 @@ My hope is that this gets you up and going much quicker than you would following
 
 ## Development
 
+The first `npm install` is for client and the second is the api subfolder. 
 ```bash
 npm install
 cd api
